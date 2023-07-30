@@ -23,8 +23,8 @@ import javax.swing.JFrame;
  */
 public class GameCanvas extends JFrame
 {
-    private final int defaultScreenWidth = 1280;
-    private final int defaultScreenHeight = 720;
+    private final int defaultScreenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;
+    private final int defaultScreenHeight = Toolkit.getDefaultToolkit().getScreenSize().height;
     // private final Boolean fullscreen = false;
     private final Boolean fullscreen = true;
     private Graphics g;
