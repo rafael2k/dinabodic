@@ -16,9 +16,11 @@ make
 
 # Running
 
-Download or build the "DinaBodic.jar" file and run:
+Download or build the "DinaBodic.zip" file and run:
 
 ```
+unzip DinaBodic.zip
+cd DinaBodic
 java -jar DinaBodic.jar
 ```
 
