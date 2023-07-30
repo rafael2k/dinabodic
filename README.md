@@ -6,13 +6,22 @@ For more information, read the ![report about the game](relatorio.pdf) (in Portu
 
 ![](screen1.png)
 
+# Building
+
+To build, make sure you have "javac" and "jar", and run:
+
+```
+make
+```
+
 # Running
 
-Download the "DinaBodic.zip" file and inside the "DinaBodic" folder, run:
+Download or build the "DinaBodic.jar" file and run:
 
 ```
 java -jar DinaBodic.jar
 ```
+
 # Troubleshooting Java sound problem
 
 On Linux (Debian 11), add the following lines to "/etc/java-11-openjdk/sound.properties":
