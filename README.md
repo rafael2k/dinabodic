@@ -2,7 +2,9 @@
 
 DinaBodic is a 2D starship platform game written in Java.
 
-For more information, read the report about the game:
+For more information, read the ![report about the game](relatorio.pdf) (in Portuguese).
+
+![](screen1.png)
 
 # Running
 
