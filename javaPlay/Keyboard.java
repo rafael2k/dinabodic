@@ -41,7 +41,12 @@ public class Keyboard implements KeyListener
 
     public synchronized void keyPressed(KeyEvent e)
     {
-        if(keysPressed.contains(e.getKeyCode()) == false)
+        if((keysPressed.contains(e.getKeyCode()) == false) &&
+            ( (e.getKeyCode() == UP_KEY) ||
+             (e.getKeyCode() == DOWN_KEY) ||
+             (e.getKeyCode() == LEFT_KEY) ||
+             (e.getKeyCode() == RIGHT_KEY) ||
+             (e.getKeyCode() == SPACE_KEY) ))
         {
             keysPressed.put(e.getKeyCode(), e.getKeyCode());            
         }
@@ -49,6 +54,6 @@ public class Keyboard implements KeyListener
 
     public synchronized void keyReleased(KeyEvent e)
     {     
-        keysPressed.remove(e.getKeyCode());        
+        keysPressed.remove(e.getKeyCode());
     }
 }

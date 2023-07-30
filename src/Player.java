@@ -21,7 +21,7 @@ import javax.sound.sampled.Clip;
 public class Player extends GameObject
 {
     public int startX = 32;
-    public int startY = 32;
+    public int startY = Global.HEIGHT / 2;
     private Sprite sprite;
     private Sprite fireSprite;
     private Scene scene;
@@ -129,7 +129,7 @@ public class Player extends GameObject
     {
         // take care of ENTER's bursts... 300ms between two shots...
         long currentFireTime = System.currentTimeMillis();
-        if ( (currentFireTime - lastFireTime) > 500 )
+        if ( (currentFireTime - lastFireTime) > 150 )
         {
             PlayerFire fire = new PlayerFire(fireSprite);
             fire.x = x + 48;
