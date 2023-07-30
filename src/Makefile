@@ -19,8 +19,7 @@ dinabodic.jar:
 	mv *.class dinabodic
 	cp -a ../javaPlay/javaPlay .
 	cp -a ../media/* .
-	jar -cmf manifest.txt DinaBodic.jar dinabodic javaPlay *.png *.scn *.jpg *.wav *.mp3
-
+	jar -cmf manifest.txt DinaBodic.jar dinabodic javaPlay
 clean:
-	rm -rf *.class DinaBodic.jar javaPlay *.png *.scn *.jpg *.wav *.mp3
+	rm -rf *.class DinaBodic.jar javaPlay
 	rm manifest.txt

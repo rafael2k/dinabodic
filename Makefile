@@ -4,7 +4,10 @@
 all: DinaBodic.jar
 
 DinaBodic.jar: java dinabodic
-	mv src/DinaBodic.jar .
+	mkdir DinaBodic
+	mv src/DinaBodic.jar DinaBodic
+	cp -a media/* DinaBodic
+	zip DinaBodic.zip DinaBodic/*
 
 java:
 	$(MAKE) -C javaPlay
@@ -15,3 +18,4 @@ dinabodic:
 clean:
 	$(MAKE) -C javaPlay clean
 	$(MAKE) -C src clean
+	rm -rf DinaBodic DinaBodic.zip
