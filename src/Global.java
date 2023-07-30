@@ -4,6 +4,8 @@
 
 package dinabodic;
 
+import java.awt.Toolkit;
+
 /**
  * @author VisionLab/PUC-Rio (2009)
  * Rafael Diniz/Telemidia/PUC-Rio (2014)
@@ -14,8 +16,8 @@ public class Global
     public static final int SIMPLE_CONTROLLER_ID = 1;
     public static final int END_SCREEN_CONTROLLER_ID = 2;
     
-    public static final int WIDTH = 1280;
-    public static final int HEIGHT = 720;
+    public static final int WIDTH = Toolkit.getDefaultToolkit().getScreenSize().width;
+    public static final int HEIGHT = Toolkit.getDefaultToolkit().getScreenSize().height;
     
     public static final int PLAYER_WIDTH = 32;
     public static final int PLAYER_HEIGHT = 32;

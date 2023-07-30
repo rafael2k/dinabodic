@@ -4,6 +4,7 @@
 all: DinaBodic.jar
 
 DinaBodic.jar: java dinabodic
+	rm -rf DinaBodic
 	mkdir DinaBodic
 	mv src/DinaBodic.jar DinaBodic
 	cp -a media/* DinaBodic
