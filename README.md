@@ -39,5 +39,6 @@ javax.sound.sampled.TargetDataLine=com.sun.media.sound.DirectAudioDeviceProvider
 # Author
 
 Graphics were created by Samir Piccolotto Issa, VFX and sound
-by Felipe Ridolfi. Code was created by Rafael Diniz.
+by Felipe Ridolfi. Code was created by Rafael Diniz. JavaPlay engine
+was done by VisionLab/PUC-Rio, and described in the book by Prof. Bruno Feijó: http://www.inf.puc-rio.br/livroicc/ .
 
